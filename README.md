@@ -1,4 +1,4 @@
-# Go conventions
+# Go guide
 
 The guiding principle for these conventions is:
 
