@@ -174,7 +174,6 @@ The sections and conventions are ordered alphabetically.
 - MUST comply with gofmt -s
 - MUST comply with goimports
 - MUST comply with golint
-- MUST comply with gotype
 - SHOULD comply with https://blog.golang.org/godoc-documenting-go-code
 - SHOULD comply with https://blog.golang.org/organizing-go-code
 - SHOULD comply with https://blog.golang.org/package-names
