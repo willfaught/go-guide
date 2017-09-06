@@ -9,7 +9,7 @@ The best way to do that is to facilitate skimming.
 The best way to do that is to facilitate reading and searching.
 
 In general, white space and name prefixes go a long way to improve readability.
-Blank lines group and separate things visually and thereby conceptually.
+Blank lines group things visually and thereby conceptually.
 Name prefixes group related things.
 
 Ordering items predictably is the best way to search them.
