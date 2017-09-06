@@ -10,7 +10,7 @@ The best way to do that is to facilitate reading and searching.
 
 In general, white space and name prefixes go a long way to improve readability.
 Blank lines group and separate things visually and thereby conceptually.
-Name prefixes reduce stutter and group related things.
+Name prefixes group related things.
 
 A predictable order of items is the best way to search them.
 Items ordered alphabetically enables binary search.
