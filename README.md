@@ -1,6 +1,6 @@
 # Go guide
 
-The guiding principle for these conventions is:
+The guiding principle for these Go coding conventions is:
 
 ***Do not write code for yourself; write it for the poor engineer woken in the night to fix it for you.***
 
