@@ -12,7 +12,7 @@ In general, white space and name prefixes go a long way to improve readability.
 Blank lines group and separate things visually and thereby conceptually.
 Name prefixes group related things.
 
-A predictable order of items is the best way to search them.
+Ordering items predictably is the best way to search them.
 Items ordered alphabetically enables binary search.
 Items of the same category grouped together, and those groups having a predictable order, simplifies searches by quickly eliminating large parts of the search space.
 
