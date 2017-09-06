@@ -9,7 +9,7 @@ The best way to do that is to facilitate skimming code.
 The best way to do that is to facilitate reading and searching code.
 Some of the conventions address these things.
 
-Other conventions describe Go idioms and best practices observed from personal experience.
+The rest of the conventions describe Go idioms and best practices observed from personal experience.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
