@@ -144,6 +144,7 @@ The sections and conventions are ordered alphabetically.
 - SHOULD comply with https://blog.golang.org/package-names
 - SHOULD comply with https://github.com/golang/go/wiki/CodeReviewComments
 - SHOULD comply with https://golang.org/doc/effective_go.html
+- SHOULD follow the example of the standard library
 
 ## Implementation
 
