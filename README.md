@@ -4,7 +4,7 @@ The guiding principle for these conventions is:
 
 ***Do not write code for yourself; write it for the poor engineer woken in the night to fix it for you.***
 
-The best way to do that is to facilitate learning and working in unfamiliar code.
+The best way to do that is to facilitate working in unfamiliar code.
 The best way to do that is to facilitate skimming.
 The best way to do that is to facilitate reading and searching.
 
