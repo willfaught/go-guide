@@ -9,7 +9,7 @@ The best way to do that is to facilitate skimming.
 The best way to do that is to facilitate reading and searching.
 Blank lines and name prefixes group things visually and thereby conceptually.
 Things ordered predictably, such as alphabetically, can be searched quickly.
-Grouping similar things and separating different things removes large parts of the search space.
+Grouping similar things and separating different things simplifies or removes large parts of the search space.
 
 The rest of the conventions encourage Go idioms and best practices observed from personal experience.
 
