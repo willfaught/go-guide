@@ -7,14 +7,9 @@ The guiding principle for these conventions is:
 The best way to do that is to facilitate working in unfamiliar code.
 The best way to do that is to facilitate skimming.
 The best way to do that is to facilitate reading and searching.
-
-In general, white space and name prefixes go a long way to improve readability.
-Blank lines group things visually and thereby conceptually.
-Name prefixes group related things.
-
-Ordering items predictably is the best way to search them.
-Items ordered alphabetically enables binary search.
-Items of the same category grouped together, and those groups having a predictable order, simplifies searches by quickly eliminating large parts of the search space.
+Blank lines and name prefixes group things visually and thereby conceptually.
+Things ordered predictably, such as alphabetically, can be searched quickly.
+Grouping similar things and separating different things removes large parts of the search space.
 
 The rest of the conventions encourage Go idioms and best practices observed from personal experience.
 
