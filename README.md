@@ -29,12 +29,6 @@ The sections and conventions are ordered alphabetically.
             ID, Name string
         }{ ...
 
-- SHOULD make zero values useful
-
-        var b bytes.Buffer
-	
-        b.WriteString("foo")
-
 - SHOULD prefix package error variable names with Err
 
         var ErrInvalid = errors.New("thing invalid")
