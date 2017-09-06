@@ -32,7 +32,8 @@ The sections and conventions are ordered alphabetically.
 - SHOULD make zero values useful
 
         var b bytes.Buffer
-        ... = b.WriteString("foo")
+	
+        b.WriteString("foo")
 
 - SHOULD name validation functions Validate
 
