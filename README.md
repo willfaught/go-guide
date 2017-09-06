@@ -29,10 +29,6 @@ The sections and conventions are ordered alphabetically.
             ID, Name string
         }{ ...
 
-- SHOULD accept interfaces and return structs
-
-        func NewLogfmtLogger(l log.Logger) *LogfmtLogger ...
-
 - SHOULD group related names with common prefixes
 
         const (
