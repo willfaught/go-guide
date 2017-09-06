@@ -23,16 +23,13 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD NOT export fields of unexported struct types unless necessary
 
-        type test struct {
+        for _, test := range []struct {
             actual, expected interface{}
-        }
+        } ...
 
-        type response struct {
+        json.Marshal(struct {
             ID, Name string
-        }
-
-        var r response ...
-        ... = json.Marshal(r)
+        }{ ...
 
 - SHOULD accept interfaces and return structs
 
