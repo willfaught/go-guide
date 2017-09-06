@@ -29,10 +29,6 @@ The sections and conventions are ordered alphabetically.
             ID, Name string
         }{ ...
 
-- SHOULD prefix package error variable names with Err
-
-        var ErrInvalid = errors.New("thing invalid")
-
 - SHOULD put main packages in repositories with at least one library package under cmd
 
         .../github.com/bigcommerce/foo/
