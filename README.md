@@ -119,7 +119,7 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- MUST NOT use special syntax like Markdown
+- MUST NOT use markup like Markdown
 
         // Add adds a and b together and returns the result.
         func Add(a, b int) int {...}
