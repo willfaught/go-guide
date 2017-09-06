@@ -35,10 +35,6 @@ The sections and conventions are ordered alphabetically.
 	
         b.WriteString("foo")
 
-- SHOULD name validation functions Validate
-
-        func (t T) Validate(...) error {...}
-
 - SHOULD prefix package error variable names with Err
 
         var ErrInvalid = errors.New("thing invalid")
