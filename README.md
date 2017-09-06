@@ -139,12 +139,10 @@ The sections and conventions are ordered alphabetically.
 - MUST comply with gofmt -s
 - MUST comply with goimports
 - MUST comply with golint
-- SHOULD comply with https://blog.golang.org/godoc-documenting-go-code
-- SHOULD comply with https://blog.golang.org/organizing-go-code
-- SHOULD comply with https://blog.golang.org/package-names
 - SHOULD comply with https://github.com/golang/go/wiki/CodeReviewComments
 - SHOULD comply with https://golang.org/doc/effective_go.html
-- SHOULD follow the example of the standard libraries
+- SHOULD follow the example of the Go blog
+- SHOULD follow the example of the Go standard libraries
 
 ## Implementation
 
