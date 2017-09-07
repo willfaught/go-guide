@@ -52,8 +52,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- MUST document packages having multiple non-test files in doc.go
-
 - MUST document the format returned by String methods
 
         // String implements fmt.Stringer. The format is Year-Month-Day.
