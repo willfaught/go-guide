@@ -215,10 +215,6 @@ The sections and conventions are ordered alphabetically.
         
         // The number of results
 
-- SHOULD prefix standard library import aliases with "std"
-
-        import stdio "io"
-
 - SHOULD end line comments that are full sentences or contain multiple sentences end with punctuation
 
         fooaddr.Print() // fooaddr is guaranteed to be valid.
@@ -366,6 +362,10 @@ The sections and conventions are ordered alphabetically.
         default:
             panic(n)
         }
+
+- SHOULD prefix standard library import aliases with "std"
+
+        import stdio "io"
 
 - SHOULD separate cases with a blank line
 
