@@ -29,15 +29,18 @@ The sections and conventions are ordered alphabetically.
             ID, Name string
         }{ ...
 
-- SHOULD put main packages in repositories with at least one library package under cmd
+- SHOULD put multiple main packages under cmd
 
-        .../github.com/bigcommerce/foo/
+        .../github.com/foo/bar/
             cmd/
-                foo/
+                bar-start/
                     main.go
                     main_test.go
-            foo.go
-            foo_test.go
+                bar-stop/
+                    main.go
+                    main_test.go
+            bar.go
+            bar_test.go
 
 - SHOULD return descriptive errors from validation functions
 
