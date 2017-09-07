@@ -66,7 +66,7 @@ The sections and conventions are ordered alphabetically.
 
         func TestFoo_Bar_baz() ...
 
-- SHOULD provide example functions
+- SHOULD provide examples
 
         func ExampleFoo_Bar_baz() ...
 
