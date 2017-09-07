@@ -111,6 +111,11 @@ The sections and conventions are ordered alphabetically.
 
 ## Implementation
 
+- MUST NOT use print and println
+
+        fmt.Print(...)
+        fmt.Println(...)
+
 - MUST assert interface implementations in tests
 
         func TestFoo_stringer(t *testing.T) {
@@ -124,11 +129,6 @@ The sections and conventions are ordered alphabetically.
             foo_test.go
             main.go
             main_test.go
-
-- MUST use fmt.Print and fmt.Println instead of print and println
-
-        fmt.Print(...)
-        fmt.Println(...)
 
 - MUST use lowercase names for package directories and files
 
