@@ -42,7 +42,7 @@ The sections and conventions are ordered alphabetically.
             bar.go
             bar_test.go
 
-- SHOULD use lightweight main packages that drive libraries
+- SHOULD drive libraries with lightweight main packages
 
         import "github.com/bigcommerce/foo"
 
