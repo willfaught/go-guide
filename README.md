@@ -489,28 +489,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Test
 
-- SHOULD NOT fail and stop a test if it is possible to continue
-
-        var id, err = NewFoo()
-
-        if err != nil {
-            t.Fatal(err)
-        }
-
-        f, err := GetFoo(id)
-
-        if err != nil {
-            t.Error(err)
-        }
-
-        if err := UpdateFoo(id, Foo{...}); err != nil {
-            t.Error(err)
-        }
-
-        if err := DeleteFoo(id); err != nil {
-            t.Error(err)
-        }
-
 - SHOULD NOT use assertion library packages
 
         if actual.count != expected.count {
