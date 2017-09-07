@@ -209,19 +209,15 @@ The sections and conventions are ordered alphabetically.
         var temp ...
         var t ...
 
+- SHOULD capitalize comments
+
+        // Only if out of date
+        
+        // The number of results
+
 - SHOULD prefix standard library import aliases with "std"
 
         import stdio "io"
-
-- SHOULD begin line comments with capitalization
-
-        struct {
-            ReadTimeout time.Duration // Maximum duration before timing out read of the request
-        }
-
-        if x == nil { // Happens if the database could not be reached
-            ...
-        }
 
 - SHOULD end line comments that are full sentences or contain multiple sentences end with punctuation
 
