@@ -181,18 +181,6 @@ The sections and conventions are ordered alphabetically.
             bar()
         }
 
-- MUST panic for unrecoverable errors
-
-        type foo struct {
-            Name string
-        }
-
-        var b, err = json.Marshal(foo{...})
-
-        if err != nil {
-            panic(err)
-        }
-
 - MUST use the type `struct{}` for values of done channels
 
         var done = make(chan struct{})
