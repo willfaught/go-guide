@@ -25,10 +25,6 @@ The sections and conventions are ordered alphabetically.
 
         func TestFoo_Bar_baz() ...
 
-- SHOULD provide examples
-
-        func ExampleFoo_Bar_baz() ...
-
 ## General
 
 - MUST comply with go test
