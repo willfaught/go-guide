@@ -13,7 +13,7 @@ The rest of the conventions describe Go idioms and best practices observed from 
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-The examples show what MUST or SHOULD be done, or what is RECOMMENDED to be done.
+The examples show what MUST, SHOULD, or MAY be done.
 
 The sections and conventions are ordered alphabetically.
 
@@ -195,7 +195,7 @@ The sections and conventions are ordered alphabetically.
             seen[f] = struct{}{}
         }
 
-- RECOMMENDED you abbreviate names with initials or prefixes
+- SHOULD abbreviate names with initials or prefixes
 
         var context ...
         var con ...
@@ -209,12 +209,12 @@ The sections and conventions are ordered alphabetically.
         var temp ...
         var t ...
 
-- RECOMMENDED you prefix standard library import aliases with "std"
+- SHOULD prefix standard library import aliases with "std"
 
         import stdhttp "net/http"
         import foohttp "github.com/company/foo/http"
 
-- RECOMMENDED line comments begin with capitalization
+- SHOULD begin line comments with capitalization
 
         struct {
             ReadTimeout time.Duration // Maximum duration before timing out read of the request
@@ -224,7 +224,7 @@ The sections and conventions are ordered alphabetically.
             ...
         }
 
-- RECOMMENDED line comments that are full sentences or contain multiple sentences end with punctuation
+- SHOULD end line comments that are full sentences or contain multiple sentences end with punctuation
 
         fooaddr.Print() // fooaddr is guaranteed to be valid.
 
