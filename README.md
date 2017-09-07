@@ -140,14 +140,6 @@ The sections and conventions are ordered alphabetically.
 
 - MUST commit vendored packages
 
-- MUST name files with a main function main.go
-
-        .../github.com/company/foo/
-            foo.go
-            foo_test.go
-            main.go
-            main_test.go
-
 - MUST use lowercase names for package directories and files
 
         .../github.com/company/foo/
