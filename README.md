@@ -60,7 +60,7 @@ The sections and conventions are ordered alphabetically.
         // Name returns the t name.
         func (t T) Name() (string, error)
 
-- SHOULD describe preconditions and postconditions
+- SHOULD document preconditions and postconditions
 
         // Foo is ...
         //
