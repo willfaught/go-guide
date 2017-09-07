@@ -156,8 +156,6 @@ The sections and conventions are ordered alphabetically.
 
         func (m *FooMock) Bar() ...
 
-- SHOULD put generate commands in generate.go
-
 ## Style
 
 - MUST NOT begin or end blocks with a blank line
