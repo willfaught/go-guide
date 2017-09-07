@@ -50,16 +50,6 @@ The sections and conventions are ordered alphabetically.
             foo.Foo()
         }
 
-- SHOULD use value types for immutable parameters with small types
-
-        type Small struct {
-            // 3 fields
-        }
-
-        func Print(s Small) {...}
-
-        func (s Small) Validate(...) error {...}
-
 ## Documentation
 
 - MUST NOT use markup like Markdown
