@@ -52,11 +52,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- MUST document the format returned by String methods
-
-        // String implements fmt.Stringer. The format is Year-Month-Day.
-        func (d Date) String() string {...}
-
 - SHOULD NOT explicitly document an error result unless useful
 
         // Validate validates t.
