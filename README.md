@@ -31,20 +31,20 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD put multiple main packages under cmd
 
-        .../github.com/foo/bar/
+        .../github.com/company/foo/
             cmd/
-                bar-start/
+                foo-start/
                     main.go
                     main_test.go
-                bar-stop/
+                foo-stop/
                     main.go
                     main_test.go
-            bar.go
-            bar_test.go
+            foo.go
+            foo_test.go
 
 - SHOULD drive libraries with lightweight main packages
 
-        import "github.com/bigcommerce/foo"
+        import "github.com/company/foo"
 
         func main() {
             foo.Foo()
@@ -164,7 +164,7 @@ The sections and conventions are ordered alphabetically.
 
 - MUST name files with a main function main.go
 
-        .../github.com/bigcommerce/foo/
+        .../github.com/company/foo/
             cmd/
                 foo/
                     main.go
@@ -179,7 +179,7 @@ The sections and conventions are ordered alphabetically.
 
 - MUST use lowercase names for package directories and files
 
-        .../github.com/bigcommerce/foo/
+        .../github.com/company/foo/
             cmd/
                 foo/
                     main.go
@@ -214,17 +214,17 @@ The sections and conventions are ordered alphabetically.
 - MUST name import aliases like packages
 
         import stdhttp "net/http"
-        import foohttp "github.com/bigcommerce/foo/http"
+        import foohttp "github.com/company/foo/http"
 
 - MUST name packages the same as their directory
 
-        .../github.com/bigcommerce/foo-go/
+        .../github.com/company/foo-go/
             foo/
                 foo.go
-        .../github.com/bigcommerce/bar.go/
+        .../github.com/company/bar.go/
             bar/
                 bar.go
-        ../github.com/bigcommerce/baz_go/
+        ../github.com/company/baz_go/
             baz/
                 baz.go
 
@@ -282,7 +282,7 @@ The sections and conventions are ordered alphabetically.
 - RECOMMENDED you prefix standard library import aliases with "std"
 
         import stdhttp "net/http"
-        import foohttp "github.com/bigcommerce/foo/http"
+        import foohttp "github.com/company/foo/http"
 
 - RECOMMENDED line comments begin with capitalization
 
@@ -323,7 +323,7 @@ The sections and conventions are ordered alphabetically.
 - SHOULD alias all imports with conflicting names
 
         import stdhttp "net/http"
-        import foohttp "github.com/bigcommerce/foo/http"
+        import foohttp "github.com/company/foo/http"
 
 - SHOULD generate code that looks hand-written
 
