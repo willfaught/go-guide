@@ -123,6 +123,12 @@ The sections and conventions are ordered alphabetically.
             var _ fmt.Stringer = &Foo{}
         }
 
+- MUST close done channels
+
+        var done = make(chan struct{})
+        ...
+        close(done)
+
 - MUST commit vendored packages
 
 - MUST name files with a main function main.go
@@ -180,12 +186,6 @@ The sections and conventions are ordered alphabetically.
 
             bar()
         }
-
-- MUST close done channels
-
-        var done = make(chan struct{})
-        ...
-        close(done)
 
 - MUST use `struct{}` elements for maps that represent sets
 
