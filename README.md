@@ -111,7 +111,7 @@ The sections and conventions are ordered alphabetically.
 
 ## Implementation
 
-- MUST NOT use print and println
+- MUST NOT use print or println
 
         fmt.Print(...)
         fmt.Println(...)
