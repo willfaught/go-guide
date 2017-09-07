@@ -60,11 +60,6 @@ The sections and conventions are ordered alphabetically.
         // Validate validates t. Returns ErrIDInvalid if ID is invalid.
         func (t T2) Validate() error
 
-- SHOULD document the interfaces a method implements
-
-        // Read implements io.Reader.
-        func (t *T) Read(p []byte) (int, error) {...}
-
 ## General
 
 - MUST comply with go test
