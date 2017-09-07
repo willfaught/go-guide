@@ -19,16 +19,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Design
 
-- MUST NOT export fields of unexported struct types unless necessary
-
-        for _, test := range []struct {
-            actual, expected interface{}
-        }{ ...
-
-        json.Marshal(struct {
-            ID, Name string
-        }{ ...
-
 - MUST use `struct{}` elements for maps that represent sets
 
         var seen = map[Foo]struct{}{}
