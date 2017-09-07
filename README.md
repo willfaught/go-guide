@@ -336,16 +336,12 @@ The sections and conventions are ordered alphabetically.
 - SHOULD NOT use mutable global variables
 
         func TestFoo(t *testing.T) {
-            var s = NewServer()
-            ...
-        }
+            var s = NewServer() ...
 
 - SHOULD call testing.T.Parallel
 
         func TestFoo(t *testing.T) {
-            t.Parallel()
-            ...
-        }
+            t.Parallel() ...
 
 - SHOULD use the -race flag
 
