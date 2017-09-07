@@ -111,19 +111,11 @@ The sections and conventions are ordered alphabetically.
 
 ## Implementation
 
-- MUST assert interface implementations with package variable declarations
+- MUST assert interface implementations in tests
 
-        var _ fmt.Stringer = Foo{}
-
-        var _ fmt.Stringer = (*Bar)(nil)
-
-        type Foo ...
-
-        func (f Foo) String() string {...}
-
-        type Bar ...
-
-        func (b *Bar) String() string {...}
+        func TestFoo_stringer(t *testing.T) {
+            var _ fmt.Stringer = &Foo{}
+        }
 
 - MUST commit vendored packages
 
