@@ -331,13 +331,10 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD NOT use assertion libraries
 
-        if actual != expected {
-            t.Errorf("actual %v, expected %v", actual, expected)
-        }
-
-        if !reflect.DeepEqual(actual, expected) {
-            t.Errorf("actual %v, expected %v", actual, expected)
-        }
+        func TestFoo(t *testing.T) {
+            ... if actual = Foo(input); actual != expected {
+                t.Errorf("input %v, actual %v, expected %v", input, actual, expected)
+            } ...
 
 - SHOULD NOT use mutable global variables
 
