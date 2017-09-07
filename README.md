@@ -51,6 +51,8 @@ The sections and conventions are ordered alphabetically.
 
 - MUST vendor external packages for main packages
 
+- MUST vendor with dep
+
 ## Style
 
 - MUST NOT begin or end blocks with a blank line
