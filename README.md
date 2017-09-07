@@ -148,20 +148,6 @@ The sections and conventions are ordered alphabetically.
             main.go
             main_test.go
 
-- MUST name packages the same as their directory
-
-        .../github.com/company/foo-go/
-            foo/
-                foo.go
-
-        .../github.com/company/foo.go/
-            foo/
-                foo.go
-
-        ../github.com/company/foo_go/
-            foo/
-                foo.go
-
 - MUST use lowercase names for package directories and files
 
         .../github.com/company/foo/
