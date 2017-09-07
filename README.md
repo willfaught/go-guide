@@ -163,7 +163,7 @@ The sections and conventions are ordered alphabetically.
 
         if ... {
             foo()
-            ...
+
             bar()
         }
 
