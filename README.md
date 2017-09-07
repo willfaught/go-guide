@@ -195,6 +195,26 @@ The sections and conventions are ordered alphabetically.
             bar()
         }
 
+- SHOULD NOT use the functions `make` or `new` unless necessary
+
+        T{...}
+        []T{...}
+        [N]T{...}
+        map[T]T{...}
+        make([]T, N)
+        make([]T, M, N)
+        make(chan T)
+        make(map[T]T, N)
+        new(int)
+
+- SHOULD NOT use raw string literals unless necessary
+
+        type T struct {
+            F int `foo:"bar"`
+        }
+
+        regexp.MustCompile(`\{\{.+\}\}`)
+
 - SHOULD abbreviate names with initials or prefixes
 
         var context ...
@@ -220,26 +240,6 @@ The sections and conventions are ordered alphabetically.
         fooaddr.Print() // fooaddr is guaranteed to be valid.
 
         if !valid { // The scheduler job failed. Retry the job now.
-
-- SHOULD NOT use the functions `make` or `new` unless necessary
-
-        T{...}
-        []T{...}
-        [N]T{...}
-        map[T]T{...}
-        make([]T, N)
-        make([]T, M, N)
-        make(chan T)
-        make(map[T]T, N)
-        new(int)
-
-- SHOULD NOT use raw string literals unless necessary
-
-        type T struct {
-            F int `foo:"bar"`
-        }
-
-        regexp.MustCompile(`\{\{.+\}\}`)
 
 - SHOULD alias all imports with conflicting names
 
