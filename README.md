@@ -23,7 +23,7 @@ The sections and conventions are ordered alphabetically.
 
         for _, test := range []struct {
             actual, expected interface{}
-        } ...
+        }{ ...
 
         json.Marshal(struct {
             ID, Name string
