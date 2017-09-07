@@ -191,16 +191,6 @@ The sections and conventions are ordered alphabetically.
             panic(err)
         }
 
-- MUST qualify fields in literals of imported struct types
-
-        foo.Foo{A: 1}
-        foo.Foo{A: 1, B: 2}
-        Bar{1}
-        Bar{1, 2}
-        baz{1}
-        baz{1, 2}
-        struct{A, B int}{1, 2}
-
 - MUST use the type `struct{}` for values of done channels
 
         var done = make(chan struct{})
