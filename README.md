@@ -487,7 +487,7 @@ The sections and conventions are ordered alphabetically.
 
         if err := f(a, b); err != nil {...}
 
-## Test
+## Testing
 
 - SHOULD NOT use assertion library packages
 
