@@ -19,11 +19,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- SHOULD document preconditions and postconditions
-
-        // Add adds w to p. W must not be initialized or used by another Pool.
-        func (p *Pool) Add(w *Worker) { ...
-
 - SHOULD name benchmarks and tests like examples
 
         func BenchmarkFoo_Bar_baz() ...
