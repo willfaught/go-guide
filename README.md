@@ -181,11 +181,11 @@ The sections and conventions are ordered alphabetically.
             bar()
         }
 
-- MUST use the type `struct{}` for values of done channels
+- MUST close done channels
 
         var done = make(chan struct{})
         ...
-        <-done
+        close(done)
 
 - MUST use `struct{}` elements for maps that represent sets
 
