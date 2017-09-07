@@ -65,12 +65,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Implementation
 
-- MUST assert interface implementations in tests
-
-        func TestFoo_stringer(t *testing.T) {
-            var _ fmt.Stringer = &Foo{}
-        }
-
 - MUST commit vendored packages
 
 - MUST vendor external packages for main packages
