@@ -17,21 +17,6 @@ The examples show what MUST, SHOULD, or MAY be done.
 
 The sections and conventions are ordered alphabetically.
 
-## Design
-
-- SHOULD put multiple main packages under cmd
-
-        .../github.com/company/foo/
-            cmd/
-                foo-start/
-                    main.go
-                    main_test.go
-                foo-stop/
-                    main.go
-                    main_test.go
-            foo.go
-            foo_test.go
-
 ## Documentation
 
 - SHOULD document preconditions and postconditions
