@@ -69,20 +69,6 @@ The sections and conventions are ordered alphabetically.
 
 - MUST vendor external packages for main packages
 
-- SHOULD export mock implementations of exported interfaces
-
-        type Foo interface {
-            Bar()
-        }
-
-        type FooMock struct {
-            mock.Mock
-        }
-
-        func (m *FooMock) Bar() {
-            m.Called()
-        }
-
 ## Style
 
 - MUST NOT begin or end blocks with a blank line
