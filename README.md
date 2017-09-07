@@ -60,6 +60,26 @@ The sections and conventions are ordered alphabetically.
         // Name returns the t name.
         func (t T) Name() (string, error)
 
+- SHOULD describe preconditions and postconditions
+
+        // Foo is ...
+        //
+        // If Deleted or Updated are not zero then they must be greater than or equal to Created.
+        // If both Updated and Deleted are not zero then Updated must be less than or equal to Deleted.
+        type Foo struct {
+            // ID is the identifier. It must not be zero. It must be unique.
+            ID string
+
+            // Created is the create time. It must not be zero.
+            Created time.Time
+
+            // Deleted is the delete time.
+            Deleted time.Time
+
+            // Updated is the update time.
+            Updated time.Time
+        }
+
 - SHOULD name benchmarks and tests like examples
 
         func BenchmarkFoo_Bar_baz() ...
@@ -90,19 +110,6 @@ The sections and conventions are ordered alphabetically.
 - SHOULD follow the example of the Go standard libraries
 
 ## Implementation
-
-- MUST NOT assume conditions that are not explicitly documented
-
-        type T struct {
-            ...
-            // ID is the identifier. Must not be zero. Must be unique.
-            ID string
-            ...
-            // UpdatedAt is when it was updated. Must be UTC. Must not
-            // be less than CreatedAt if not zero. Must not be greater
-            // than DeletedAt if DeletedAt is not zero.
-            UpdatedAt time.Time
-        }
 
 - MUST assert interface implementations with package variable declarations
 
