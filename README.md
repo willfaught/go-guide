@@ -19,15 +19,7 @@ The sections and conventions are ordered alphabetically.
 
 ## Design
 
-- MUST use `struct{}` elements for maps that represent sets
-
-        var seen = map[Foo]struct{}{}
-
-        for _, f := range fs {
-            seen[f] = struct{}{}
-        }
-
-- SHOULD NOT export fields of unexported struct types unless necessary
+- MUST NOT export fields of unexported struct types unless necessary
 
         for _, test := range []struct {
             actual, expected interface{}
@@ -36,6 +28,14 @@ The sections and conventions are ordered alphabetically.
         json.Marshal(struct {
             ID, Name string
         }{ ...
+
+- MUST use `struct{}` elements for maps that represent sets
+
+        var seen = map[Foo]struct{}{}
+
+        for _, f := range fs {
+            seen[f] = struct{}{}
+        }
 
 - SHOULD drive libraries with lightweight main packages
 
