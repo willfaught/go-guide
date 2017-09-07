@@ -211,8 +211,7 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD prefix standard library import aliases with "std"
 
-        import stdhttp "net/http"
-        import foohttp "github.com/company/foo/http"
+        import stdio "io"
 
 - SHOULD begin line comments with capitalization
 
