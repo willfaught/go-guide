@@ -120,12 +120,10 @@ The sections and conventions are ordered alphabetically.
 - MUST name files with a main function main.go
 
         .../github.com/company/foo/
-            cmd/
-                foo/
-                    main.go
-                    main_test.go
             foo.go
             foo_test.go
+            main.go
+            main_test.go
 
 - MUST use fmt.Print and fmt.Println instead of print and println
 
