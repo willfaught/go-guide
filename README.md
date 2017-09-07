@@ -42,18 +42,6 @@ The sections and conventions are ordered alphabetically.
             bar.go
             bar_test.go
 
-- SHOULD return descriptive errors from validation functions
-
-        func (t T) Validate(...) error {
-            switch {
-            case t.CreatedAt.After(time.Now()):
-			return fmt.Errorf("created at %v after now", t.CreatedAt)
-            ...
-            default:
-                return nil
-            }
-        }
-
 - SHOULD use lightweight main packages that drive libraries
 
         import "github.com/bigcommerce/foo"
