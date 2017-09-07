@@ -29,6 +29,14 @@ The sections and conventions are ordered alphabetically.
             ID, Name string
         }{ ...
 
+- SHOULD drive libraries with lightweight main packages
+
+        import "github.com/company/foo"
+
+        func main() {
+            foo.Foo()
+        }
+
 - SHOULD put multiple main packages under cmd
 
         .../github.com/company/foo/
@@ -41,14 +49,6 @@ The sections and conventions are ordered alphabetically.
                     main_test.go
             foo.go
             foo_test.go
-
-- SHOULD drive libraries with lightweight main packages
-
-        import "github.com/company/foo"
-
-        func main() {
-            foo.Foo()
-        }
 
 ## Documentation
 
