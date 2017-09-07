@@ -117,6 +117,7 @@ The sections and conventions are ordered alphabetically.
 - SHOULD comply with https://golang.org/doc/effective_go.html
 - SHOULD follow the example of the Go blog
 - SHOULD follow the example of the Go standard libraries
+- SHOULD follow the example of the Go project
 
 ## Implementation
 
