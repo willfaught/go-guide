@@ -60,14 +60,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- SHOULD NOT document simple error results
-
-        // Init initializes t.
-        func (t T) Init() error
-        
-        // Name returns the t name.
-        func (t T) Name() (string, error)
-
 - SHOULD document preconditions and postconditions
 
         // Foo is ...
