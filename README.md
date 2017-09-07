@@ -132,12 +132,6 @@ The sections and conventions are ordered alphabetically.
             var _ fmt.Stringer = &Foo{}
         }
 
-- MUST close done channels
-
-        var done = make(chan struct{})
-        ...
-        close(done)
-
 - MUST commit vendored packages
 
 - MUST vendor external packages for main packages
