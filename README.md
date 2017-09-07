@@ -60,6 +60,28 @@ The sections and conventions are ordered alphabetically.
         // Name returns the t name.
         func (t T) Name() (string, error)
 
+- SHOULD name benchmarks and tests like examples
+
+    foo.go:
+
+        type Foo ...
+
+        func (Foo) Bar() ...
+
+    foo_test.go:
+
+        func TestFoo() ...
+
+        func TestFoo_baz() ...
+
+        func TestFoo_boz() ...
+
+        func TestFoo_Bar() ...
+
+        func TestFoo_Bar_baz() ...
+
+        func TestFoo_Bar_boz() ...
+
 - SHOULD provide example functions
 
     foo.go:
