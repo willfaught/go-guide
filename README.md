@@ -19,6 +19,14 @@ The sections and conventions are ordered alphabetically.
 
 ## Design
 
+- MUST use `struct{}` elements for maps that represent sets
+
+        var seen = map[Foo]struct{}{}
+
+        for _, f := range fs {
+            seen[f] = struct{}{}
+        }
+
 - SHOULD NOT export fields of unexported struct types unless necessary
 
         for _, test := range []struct {
@@ -185,14 +193,6 @@ The sections and conventions are ordered alphabetically.
             foo()
 
             bar()
-        }
-
-- MUST use `struct{}` elements for maps that represent sets
-
-        var seen = map[Foo]struct{}{}
-
-        for _, f := range fs {
-            seen[f] = struct{}{}
         }
 
 - SHOULD abbreviate names with initials or prefixes
