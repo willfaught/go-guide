@@ -517,17 +517,3 @@ The sections and conventions are ordered alphabetically.
 - SHOULD use the -race flag
 
         $ go test -race
-
-- SHOULD write table-driven tests
-
-        for _, test := range []struct {
-            x, y, expected int
-        } {
-            {},
-            {1, 2, 3},
-            ...
-        } {
-            if actual := add(test.x, test.y); actual != test.expected {
-                t.Errorf("x %v, y %v, actual %v, expected %v", test.x, test.y, actual, test.expected)
-            }
-        }
