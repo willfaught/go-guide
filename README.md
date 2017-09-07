@@ -491,12 +491,12 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD NOT use assertion library packages
 
-        if actual.count != expected.count {
-            t.Errorf("actual %v, expected %v", actual.count, expected.count)
+        if actual != expected {
+            t.Errorf("actual %v, expected %v", actual, expected)
         }
 
-        if !reflect.DeepEqual(actual.items, expected.items) {
-            t.Errorf("actual %v, expected %v", actual.items, expected.items)
+        if !reflect.DeepEqual(actual, expected) {
+            t.Errorf("actual %v, expected %v", actual, expected)
         }
 
 - SHOULD NOT use mutable global variables
