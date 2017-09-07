@@ -52,13 +52,13 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- SHOULD NOT explicitly document an error result unless useful
+- SHOULD NOT document simple error results
 
-        // Validate validates t.
-        func (t T1) Validate() error
-
-        // Validate validates t. Returns ErrIDInvalid if ID is invalid.
-        func (t T2) Validate() error
+        // Init initializes t.
+        func (t T) Init() error
+        
+        // Name returns the t name.
+        func (t T) Name() (string, error)
 
 ## General
 
