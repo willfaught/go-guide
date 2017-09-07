@@ -19,14 +19,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Design
 
-- MUST use `struct{}` elements for maps that represent sets
-
-        var seen = map[Foo]struct{}{}
-
-        for _, f := range fs {
-            seen[f] = struct{}{}
-        }
-
 - SHOULD put multiple main packages under cmd
 
         .../github.com/company/foo/
