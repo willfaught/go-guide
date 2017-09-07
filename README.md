@@ -229,11 +229,15 @@ The sections and conventions are ordered alphabetically.
         var temp ...
         var t ...
 
+- SHOULD begin comments with a space and end general comments with a space
+
+        // Only if out of date
+
+        /* Only if out of date */
+
 - SHOULD capitalize comments
 
         // Only if out of date
-        
-        // The number of results
 
 - SHOULD end line comments that are full sentences or contain multiple sentences end with punctuation
 
