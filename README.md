@@ -121,11 +121,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Implementation
 
-- MUST NOT use the built-in print or println functions
-
-        fmt.Print(...)
-        fmt.Println(...)
-
 - MUST assert interface implementations in tests
 
         func TestFoo_stringer(t *testing.T) {
