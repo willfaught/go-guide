@@ -70,6 +70,13 @@ The sections and conventions are ordered alphabetically.
 
         func ExampleFoo_Bar_baz() ...
 
+- SHOULD refer to imported packages by their alias
+
+        import stdio "io"
+        
+        // NewReader returns a new stdio.Reader.
+        func NewReader() stdio.Reader
+
 ## General
 
 - MUST comply with go test
