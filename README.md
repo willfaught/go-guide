@@ -140,16 +140,6 @@ The sections and conventions are ordered alphabetically.
 
 - MUST commit vendored packages
 
-- MUST use lowercase names for package directories and files
-
-        .../github.com/company/foo/
-            cmd/
-                foo/
-                    main.go
-                    main_test.go
-            foo.go
-            foo_test.go
-
 - MUST vendor external packages for main packages
 
 - SHOULD export mock implementations of exported interfaces
