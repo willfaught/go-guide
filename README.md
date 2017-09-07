@@ -187,12 +187,12 @@ The sections and conventions are ordered alphabetically.
         ...
         <-done
 
-- MUST use the type `struct{}` for values of maps that represent sets
+- MUST use `struct{}` elements for maps that represent sets
 
-        var seen = map[T]struct{}{}
+        var seen = map[Foo]struct{}{}
 
-        for _, t := range ts {
-            seen[t] = struct{}{}
+        for _, f := range fs {
+            seen[f] = struct{}{}
         }
 
 - RECOMMENDED you abbreviate names with initials or prefixes
