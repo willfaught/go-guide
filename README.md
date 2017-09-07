@@ -60,11 +60,6 @@ The sections and conventions are ordered alphabetically.
         // Validate validates t. Returns ErrIDInvalid if ID is invalid.
         func (t T2) Validate() error
 
-- SHOULD document bugs with `// BUG: ...` and `// BUG(user-who-understands-bug): ...` comments
-
-         // BUG: F returns an error if called twice.
-         // BUG(someuser): F returns an error if called twice.
-
 - SHOULD document issues and tasks with `// TODO: ...` and `// TODO(user-who-understands-todo): ...` comments
 
          // TODO: Add type for X.
