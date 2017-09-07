@@ -60,11 +60,6 @@ The sections and conventions are ordered alphabetically.
         // Validate validates t. Returns ErrIDInvalid if ID is invalid.
         func (t T2) Validate() error
 
-- SHOULD document issues and tasks with `// TODO: ...` and `// TODO(user-who-understands-todo): ...` comments
-
-         // TODO: Add type for X.
-         // TODO(someuser): Add type for X.
-
 - SHOULD document the interfaces a method implements
 
         // Read implements io.Reader.
