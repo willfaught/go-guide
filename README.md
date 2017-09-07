@@ -144,15 +144,17 @@ The sections and conventions are ordered alphabetically.
 
 - MUST vendor external packages for main packages
 
-- SHOULD implement and export mock implementations of exported interfaces
+- SHOULD export mock implementations of exported interfaces
 
-        type T interface {M()...}
+        type Foo interface {
+            Bar()
+        }
 
-        type TMock struct {
+        type FooMock struct {
             mock.Mock
         }
 
-        func (t *TMock) M ...
+        func (m *FooMock) Bar() ...
 
 - SHOULD put generate commands in generate.go
 
