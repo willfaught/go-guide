@@ -37,14 +37,6 @@ The sections and conventions are ordered alphabetically.
             seen[f] = struct{}{}
         }
 
-- SHOULD drive libraries with lightweight main packages
-
-        import "github.com/company/foo"
-
-        func main() {
-            foo.Foo()
-        }
-
 - SHOULD put multiple main packages under cmd
 
         .../github.com/company/foo/
