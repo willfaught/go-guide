@@ -32,8 +32,8 @@ The sections and conventions are ordered alphabetically.
 - MUST comply with goimports
 - MUST comply with golint
 - SHOULD comply with https://golang.org/doc/effective_go.html
+- SHOULD comply with the Go blog
 - SHOULD comply with the Go wiki
-- SHOULD follow the example of the Go blog
 - SHOULD follow the example of the Go standard libraries
 - SHOULD follow the example of the Go project
 
