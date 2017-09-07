@@ -21,23 +21,8 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD document preconditions and postconditions
 
-        // Foo is ...
-        //
-        // If Deleted or Updated are not zero then they must be greater than or equal to Created.
-        // If both Updated and Deleted are not zero then Updated must be less than or equal to Deleted.
-        type Foo struct {
-            // ID is the identifier. It must not be zero. It must be unique.
-            ID string
-
-            // Created is the create time. It must not be zero.
-            Created time.Time
-
-            // Deleted is the delete time.
-            Deleted time.Time
-
-            // Updated is the update time.
-            Updated time.Time
-        }
+        // Add adds w to p. W must not be initialized or used by another Pool.
+        func (p *Pool) Add(w *Worker) { ...
 
 - SHOULD name benchmarks and tests like examples
 
