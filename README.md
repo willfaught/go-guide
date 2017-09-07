@@ -117,8 +117,6 @@ The sections and conventions are ordered alphabetically.
             var _ fmt.Stringer = &Foo{}
         }
 
-- MUST commit vendored packages
-
 - MUST name files with a main function main.go
 
         .../github.com/company/foo/
@@ -145,6 +143,8 @@ The sections and conventions are ordered alphabetically.
             foo_test.go
 
 - MUST vendor local and external packages for main packages
+
+- SHOULD commit vendored packages
 
 - SHOULD implement and export mock implementations of exported interfaces
 
