@@ -333,10 +333,7 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD NOT use assertion libraries
 
-        func TestFoo(t *testing.T) {
-            ... if actual = Foo(input); actual != expected {
-                t.Errorf("input %v, actual %v, expected %v", input, actual, expected)
-            } ...
+        if actual = Foo(input); actual != expected { ...
 
 - SHOULD NOT use mutable global variables
 
