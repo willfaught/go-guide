@@ -140,7 +140,7 @@ The sections and conventions are ordered alphabetically.
             foo.go
             foo_test.go
 
-- MUST vendor local and external packages for main packages
+- MUST vendor external packages for main packages
 
 - SHOULD commit vendored packages
 
