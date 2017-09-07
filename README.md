@@ -167,10 +167,6 @@ The sections and conventions are ordered alphabetically.
             bar()
         }
 
-- MUST prepend "std" to names for standard library aliases
-
-        import stdio "io"
-
 - MUST name packages the same as their directory
 
         .../github.com/company/foo-go/
