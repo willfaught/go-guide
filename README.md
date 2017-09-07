@@ -517,13 +517,6 @@ The sections and conventions are ordered alphabetically.
 
         $ go test -race
 
-- SHOULD skip tests rather than comment them
-
-        func TestFoo(t *testing.T) {
-            t.SkipNow()
-            ...
-        }
-
 - SHOULD write table-driven tests
 
         for _, test := range []struct {
