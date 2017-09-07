@@ -50,25 +50,6 @@ The sections and conventions are ordered alphabetically.
             foo.Foo()
         }
 
-- SHOULD use pointer types for mutable parameters and parameters with large types
-
-        type Small struct {
-            // 3 fields
-        }
-
-        func Reset(s *Small) {...}
-
-        func (s *Small) Reset() {...}
-
-        type Large struct {
-            // 15 fields
-        }
-
-        func Print(l *Large) {...}
-
-        func (l *Large) Validate() error {...}
-
-
 - SHOULD use value types for immutable parameters with small types
 
         type Small struct {
