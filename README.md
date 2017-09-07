@@ -489,7 +489,7 @@ The sections and conventions are ordered alphabetically.
 
 ## Testing
 
-- SHOULD NOT use assertion library packages
+- SHOULD NOT use assertion libraries
 
         if actual != expected {
             t.Errorf("actual %v, expected %v", actual, expected)
