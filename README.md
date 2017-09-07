@@ -31,9 +31,8 @@ The sections and conventions are ordered alphabetically.
 - MUST comply with gofmt -s
 - MUST comply with goimports
 - MUST comply with golint
-- SHOULD comply with https://github.com/golang/go/wiki/CodeReviewComments
-- SHOULD comply with https://github.com/golang/go/wiki/TableDrivenTests
 - SHOULD comply with https://golang.org/doc/effective_go.html
+- SHOULD comply with the Go wiki
 - SHOULD follow the example of the Go blog
 - SHOULD follow the example of the Go standard libraries
 - SHOULD follow the example of the Go project
