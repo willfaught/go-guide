@@ -52,14 +52,6 @@ The sections and conventions are ordered alphabetically.
 
 ## Documentation
 
-- MUST NOT use markup like Markdown
-
-        // Add adds a and b together and returns the result.
-        func Add(a, b int) int {...}
-
-        // Move moves t from from to to.
-        func (t *T) Move(from, to Location) error
-
 - MUST document packages having multiple non-test files in doc.go
 
 - MUST document the format returned by String methods
