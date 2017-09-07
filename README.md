@@ -513,7 +513,7 @@ The sections and conventions are ordered alphabetically.
             ...
         }
 
-- SHOULD run tests with the -race flag
+- SHOULD use the -race flag
 
         $ go test -race
 
