@@ -79,7 +79,9 @@ The sections and conventions are ordered alphabetically.
             mock.Mock
         }
 
-        func (m *FooMock) Bar() ...
+        func (m *FooMock) Bar() {
+            m.Called()
+        }
 
 ## Style
 
