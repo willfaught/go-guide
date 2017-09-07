@@ -4,13 +4,6 @@ The guiding principle for these Go coding conventions is:
 
 ***Do not write code for yourself; write it for the poor engineer woken in the night to fix it for you.***
 
-The best way to do that is to facilitate working in unfamiliar code.
-The best way to do that is to facilitate skimming code.
-The best way to do that is to facilitate reading and searching code.
-Some of the conventions address these things.
-
-The rest of the conventions describe Go idioms and best practices observed from personal experience.
-
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 The examples show what MUST, SHOULD, or MAY be done.
