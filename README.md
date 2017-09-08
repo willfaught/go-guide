@@ -6,14 +6,6 @@ The examples show what MUST, SHOULD, or MAY be done.
 
 The sections and conventions are ordered alphabetically.
 
-## Design
-
-### SHOULD NOT export global variables from libraries
-
-```go
-func New() *T { ...
-```
-
 ## Documentation
 
 ### SHOULD name benchmarks and tests like examples
