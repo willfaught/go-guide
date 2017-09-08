@@ -148,6 +148,17 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD separate cases with a blank line
 
+        select ... {
+        case ...:
+            ...
+
+        case ...:
+            ...
+
+        default:
+            ...
+        }
+
         switch ... {
         case ...:
             ...
