@@ -179,7 +179,6 @@ return
 
 - Consistent style
 - Skimmable
-- Grouping similar things and separating different things helps understanding
 
 ### SHOULD order file declarations like `go doc -u`
 
