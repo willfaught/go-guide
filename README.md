@@ -32,9 +32,9 @@ func TestFoo_Bar_baz() { ...
 ### MUST comply with gofmt -s
 ### MUST comply with goimports
 ### MUST comply with golint
+### SHOULD comply with https://golang.org/blog
 ### SHOULD comply with https://golang.org/doc/effective_go.html
-### SHOULD comply with the Go blog
-### SHOULD comply with the Go wiki
+### SHOULD comply with https://golang.org/wiki
 ### SHOULD follow the example of the Go standard libraries
 ### SHOULD follow the example of the Go project
 
