@@ -301,7 +301,7 @@ func ... {
 
 ### SHOULD use long variable declarations instead of short where equivalent
 
-#### Examples
+#### Example
 
 ```go
 var a, err = ...
