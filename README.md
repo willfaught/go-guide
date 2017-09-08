@@ -20,7 +20,9 @@ func New() *Foo { ...
 
 ```go
 func BenchmarkFoo_Bar_baz() { ...
+```
 
+```go
 func TestFoo_Bar_baz() { ...
 ```
 
@@ -56,7 +58,9 @@ var (
 
     bar Bar
 )
+```
 
+```go
 {
     foo()
 
@@ -68,8 +72,17 @@ var (
 
 ```go
 make(chan Foo)
+```
+
+```go
 make(chan Foo, bar)
+```
+
+```go
 make(map[Foo]Bar, baz)
+```
+
+```go
 new(int)
 ```
 
@@ -77,7 +90,9 @@ new(int)
 
 ```go
 // Started earlier
+```
 
+```go
 /* Started earlier */
 ```
 
@@ -177,7 +192,9 @@ case ...:
 default:
     ...
 }
+```
 
+```go
 switch ... {
 case ...:
     ...
