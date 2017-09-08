@@ -323,11 +323,6 @@ The sections and conventions are ordered alphabetically.
 
         if actual = Foo(input); actual != expected { ...
 
-- SHOULD NOT use mutable global variables
-
-        func TestFoo(t *testing.T) {
-            var s = NewServer() ...
-
 - SHOULD call testing.T.Parallel
 
         func TestFoo(t *testing.T) {
