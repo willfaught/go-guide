@@ -72,7 +72,7 @@ var (
 
 #### Reason
 
-- Consistent style.
+Consistent style.
 
 ### SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
