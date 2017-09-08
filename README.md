@@ -148,18 +148,15 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD separate cases with a blank line
 
-        switch t {
-        case TypeAnimal:
+        switch ... {
+        case ...:
             ...
 
-        case TypeMineral:
-            ...
-
-        case TypeVegetable:
+        case ...:
             ...
 
         default:
-            panic(t)
+            ...
         }
 
 - SHOULD separate file declarations not in a declaration block with a blank line
