@@ -52,14 +52,6 @@ The sections and conventions are ordered alphabetically.
             bar()
         }
 
-- SHOULD NOT use raw string literals unless necessary
-
-        type T struct {
-            F int `foo:"bar"`
-        }
-
-        regexp.MustCompile(`\{\{.+\}\}`)
-
 - SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
         &Foo{}
