@@ -320,19 +320,19 @@ bar, err := ...
     type t = ...
     ```
 
-- Short declarations with multiple variables are context-sensitive: `a, b := f()` can mean declare two new variables, declare a and assign b, or declare b and assign a; and thus cannot always be copied to another place safely
+- Short declarations with multiple variables in blocks are context-sensitive; for *n* variables, there are 2<sup>n-1</sup> + 1 possible meanings. This can lead to copy-paste errors.
 - Avoids unintentional variable shadowing
 
     ```go
     x := ...
 
     if ... {
-        x, err := ...
+        x, err := ... // Mistakenly declare a new x variable
 
     f(x) // X is always unchanged
     ```
 
-- A short declaration indicates that something clever is happening
+- If done this way, then short declarations in blocks indicate that something clever is happening
 
 ## Testing
 
@@ -349,6 +349,8 @@ if actual = Foo(input); actual != expected { ...
 - You don't have to learn test DSLs
 - Code is easy to understand
 - Third-party code can break or be abandoned
+- Not provided in the testing standard library
+- Not used in the standard library tests
 
 ### SHOULD call testing.T.Parallel
 
