@@ -10,15 +10,19 @@ The sections and conventions are ordered alphabetically.
 
 ### SHOULD NOT export global variables from libraries
 
-    func New() *Foo { ...
+```go
+func New() *Foo { ...
+```
 
 ## Documentation
 
 ### SHOULD name benchmarks and tests like examples
 
-    func BenchmarkFoo_Bar_baz() ...
+```go
+func BenchmarkFoo_Bar_baz() ...
 
-    func TestFoo_Bar_baz() ...
+func TestFoo_Bar_baz() ...
+```
 
 ## General
 
@@ -46,179 +50,205 @@ The sections and conventions are ordered alphabetically.
 
 ### SHOULD NOT begin or end blocks with a blank line
 
-    var (
-        foo Foo
+```go
+var (
+    foo Foo
 
-        bar Bar
-    )
+    bar Bar
+)
 
-    {
-        foo()
+{
+    foo()
 
-        bar()
-    }
+    bar()
+}
+```
 
 ### SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
-    make(chan Foo)
-    make(chan Foo, bar)
-    make(map[Foo]Bar, baz)
-    new(int)
+```go
+make(chan Foo)
+make(chan Foo, bar)
+make(map[Foo]Bar, baz)
+new(int)
+```
 
 ### SHOULD begin comments with a space and end general comments with a space
 
-    // Started earlier
+```go
+// Started earlier
 
-    /* Started earlier */
+/* Started earlier */
+```
 
 ### SHOULD capitalize comments
 
-    // Started earlier
+```go
+// Started earlier
+```
 
 ### SHOULD end comments with multiple sentences with punctuation
 
-    // Started earlier. Skip initialization.
+```go
+// Started earlier. Skip initialization.
+```
 
 ### SHOULD group similar kinds of statements and declarations with blank lines
 
-    const ...
-    const ...
+```go
+const ...
+const ...
 
-    var ...
-    var ...
+var ...
+var ...
 
-    func ...
-    func ...
+func ...
+func ...
 
-    type ...
-    type ...
+type ...
+type ...
 
-    w, x := ...
-    y, z := ...
+w, x := ...
+y, z := ...
 
-    x
-    x--
-    x++
-    x()
-    <-x
-    x <- y
-    x = y
-    defer x()
-    go x()
+x
+x--
+x++
+x()
+<-x
+x <- y
+x = y
+defer x()
+go x()
 
-    break
-    continue
-    fallthrough
-    goto
-    return
+break
+continue
+fallthrough
+goto
+return
+```
 
 ### SHOULD order file declarations like `go doc -u`
 
-    const C ...
-    
-    const c ...
+```go
+const C ...
 
-    var V ...
+const c ...
 
-    var v ...
+var V ...
 
-    func F ...
+var v ...
 
-    func f ...
+func F ...
 
-    type T ...
+func f ...
 
-    func FT(...) *T ...
+type T ...
 
-    func fT(...) *T ...
+func FT(...) *T ...
 
-    func (T) M ...
+func fT(...) *T ...
 
-    func (T) m ...
+func (T) M ...
 
-    type t ...
+func (T) m ...
 
-    func Ft(...) *t ...
+type t ...
 
-    func ft(...) *t ...
+func Ft(...) *t ...
 
-    func (t) M ...
+func ft(...) *t ...
 
-    func (t) m ...
+func (t) M ...
+
+func (t) m ...
+```
 
 ### SHOULD separate cases with blank lines
 
-    select ... {
-    case ...:
-        ...
+```go
+select ... {
+case ...:
+    ...
 
-    case ...:
-        ...
+case ...:
+    ...
 
-    default:
-        ...
-    }
+default:
+    ...
+}
 
-    switch ... {
-    case ...:
-        ...
+switch ... {
+case ...:
+    ...
 
-    case ...:
-        ...
+case ...:
+    ...
 
-    default:
-        ...
-    }
+default:
+    ...
+}
+```
 
 ### SHOULD separate multiple-line blocks with blank lines
 
-    const ...
-    const ...
+```go
+const ...
+const ...
 
-    const (
-        ...
-    )
+const (
+    ...
+)
 
-    const (
-        ...
-    )
+const (
+    ...
+)
 
-    if ... {
-        ...
-    }
+if ... {
+    ...
+}
 
-    if ... {
-        ...
-    }
+if ... {
+    ...
+}
 
-    func ... { ... }
-    func ... { ... }
+func ... { ... }
+func ... { ... }
 
-    func ... {
-        ...
-    }
+func ... {
+    ...
+}
 
-    func ... {
-        ...
-    }
+func ... {
+    ...
+}
+```
 
 ### SHOULD use long variable declarations instead of short where equivalent
 
-    var a, err = ...
+```go
+var a, err = ...
 
-    b, err := ...
+b, err := ...
+```
 
 ## Testing
 
 ### SHOULD NOT use assertion libraries
 
-    if actual = Foo(input); actual != expected { ...
+```go
+if actual = Foo(input); actual != expected { ...
+```
 
 ### SHOULD call testing.T.Parallel
 
-    func TestFoo(t *testing.T) {
-        t.Parallel() ...
+```go
+func TestFoo(t *testing.T) {
+    t.Parallel() ...
+```
 
 ### SHOULD use the -race flag
 
-    $ go test -race
+```go
+$ go test -race
+```
