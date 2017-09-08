@@ -79,11 +79,6 @@ The sections and conventions are ordered alphabetically.
 
         // Started earlier. Skip initialization.
 
-- SHOULD alias all imports with conflicting names
-
-        import stdhttp "net/http"
-        import foohttp "github.com/company/foo/http"
-
 - SHOULD generate code that looks hand-written
 
 - SHOULD group adjacent statements of the same kind together and separate groups with a blank line
