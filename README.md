@@ -146,10 +146,6 @@ The sections and conventions are ordered alphabetically.
 
         func (t) m ...
 
-- SHOULD prefix standard library import aliases with "std"
-
-        import stdio "io"
-
 - SHOULD separate cases with a blank line
 
         switch t {
