@@ -67,19 +67,17 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD begin comments with a space and end general comments with a space
 
-        // Only if out of date
+        // Started earlier
 
-        /* Only if out of date */
+        /* Started earlier */
 
 - SHOULD capitalize comments
 
-        // Only if out of date
+        // Started earlier
 
-- SHOULD end line comments that are full sentences or contain multiple sentences end with punctuation
+- SHOULD end comments with multiple sentences with punctuation
 
-        fooaddr.Print() // fooaddr is guaranteed to be valid.
-
-        if !valid { // The scheduler job failed. Retry the job now.
+        // Started earlier. Skip initialization.
 
 - SHOULD alias all imports with conflicting names
 
