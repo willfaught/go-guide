@@ -188,6 +188,12 @@ The sections and conventions are ordered alphabetically.
             ...
         )
 
+        func ... { ... }
+
+        func ... {
+            ...
+        }
+
 - SHOULD use line comments instead of general comments
 
         // Package p ...
