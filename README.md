@@ -146,7 +146,7 @@ The sections and conventions are ordered alphabetically.
 
         func (t) m ...
 
-- SHOULD separate cases with a blank line
+- SHOULD separate cases with blank lines
 
         select ... {
         case ...:
