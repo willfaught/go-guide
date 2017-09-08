@@ -11,7 +11,7 @@ The sections and conventions are ordered alphabetically.
 ### SHOULD NOT export global variables from libraries
 
 ```go
-func New() *Foo { ...
+func New() *T { ...
 ```
 
 ## Documentation
@@ -19,11 +19,11 @@ func New() *Foo { ...
 ### SHOULD name benchmarks and tests like examples
 
 ```go
-func BenchmarkFoo_Bar_baz() { ...
+func BenchmarkT_M_foo() { ...
 ```
 
 ```go
-func TestFoo_Bar_baz() { ...
+func TestT_M_foo() { ...
 ```
 
 ## General
@@ -54,9 +54,9 @@ func TestFoo_Bar_baz() { ...
 
 ```go
 var (
-    foo Foo
+    foo T
 
-    bar Bar
+    bar T
 )
 ```
 
@@ -71,15 +71,15 @@ var (
 ### SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
 ```go
-make(chan Foo)
+make(chan T)
 ```
 
 ```go
-make(chan Foo, bar)
+make(chan T, n)
 ```
 
 ```go
-make(map[Foo]Bar, baz)
+make(map[T]T, n)
 ```
 
 ```go
