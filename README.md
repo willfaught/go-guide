@@ -197,9 +197,8 @@ The sections and conventions are ordered alphabetically.
 - SHOULD use long variable declarations instead of short where equivalent
 
         var a, err = ...
-        b, err := ...
 
-        if err := f(a, b); err != nil {...}
+        b, err := ...
 
 ## Testing
 
