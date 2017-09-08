@@ -79,7 +79,7 @@ The sections and conventions are ordered alphabetically.
 
         // Started earlier. Skip initialization.
 
-- SHOULD group similar statements and declarations and separate different ones with a blank line
+- SHOULD group similar kinds of statements and declarations with blank lines
 
         const ...
         const ...
