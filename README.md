@@ -44,7 +44,7 @@ The sections and conventions are ordered alphabetically.
 
 ## Style
 
-- SHOULD NOT begin or end blocks and groups with a blank line
+- SHOULD NOT begin or end blocks with a blank line
 
         var (
             foo Foo
