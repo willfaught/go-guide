@@ -146,16 +146,6 @@ The sections and conventions are ordered alphabetically.
 
         func (t) m ...
 
-- SHOULD panic with the problematic value if the panic output is sufficient to understand the problem
-
-        switch n {
-        case 0:
-            ...
-        ...
-        default:
-            panic(n)
-        }
-
 - SHOULD prefix standard library import aliases with "std"
 
         import stdio "io"
