@@ -10,6 +10,8 @@ The sections and conventions are ordered alphabetically.
 
 ### SHOULD name benchmarks and tests like examples
 
+#### Examples
+
 ```go
 func BenchmarkT_M_foo() { ...
 ```
@@ -17,6 +19,12 @@ func BenchmarkT_M_foo() { ...
 ```go
 func TestT_M_foo() { ...
 ```
+
+#### Reasons
+
+- You can run all benchmarks and tests for a package P with `go test -run ^P`
+- You can run all benchmarks and tests for a declaration D with `go test -run ^D`
+- You can run all benchmarks and tests for a method T.M with `go test -run ^T_M`
 
 ## General
 
@@ -44,6 +52,8 @@ func TestT_M_foo() { ...
 
 ### SHOULD NOT begin or end blocks with a blank line
 
+#### Examples
+
 ```go
 var (
     foo T
@@ -60,7 +70,13 @@ var (
 }
 ```
 
+#### Reason
+
+- Consistent style.
+
 ### SHOULD NOT use the built-in functions `make` or `new` unless necessary
+
+#### Examples
 
 ```go
 make(chan T)
@@ -78,7 +94,13 @@ make(map[T]T, n)
 new(int)
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD begin comments with a space and end general comments with a space
+
+#### Examples
 
 ```go
 // Started earlier
@@ -88,19 +110,37 @@ new(int)
 /* Started earlier */
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD capitalize comments
+
+#### Examples
 
 ```go
 // Started earlier
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD end comments with multiple sentences with punctuation
+
+#### Examples
 
 ```go
 // Started earlier. Skip initialization.
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD group similar kinds of statements and declarations with blank lines
+
+#### Examples
 
 ```go
 const ...
@@ -135,7 +175,13 @@ goto
 return
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD order file declarations like `go doc -u`
+
+#### Examples
 
 ```go
 const C ...
@@ -171,7 +217,13 @@ func (t) M { ...
 func (t) m { ...
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD separate cases with blank lines
+
+#### Examples
 
 ```go
 select ... {
@@ -199,7 +251,13 @@ default:
 }
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD separate multiple-line blocks with blank lines
+
+#### Examples
 
 ```go
 const ...
@@ -233,7 +291,13 @@ func ... {
 }
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD use long variable declarations instead of short where equivalent
+
+#### Examples
 
 ```go
 var a, err = ...
@@ -241,23 +305,45 @@ var a, err = ...
 b, err := ...
 ```
 
+#### Reasons
+
+- 
+
 ## Testing
 
 ### SHOULD NOT use assertion libraries
+
+#### Examples
 
 ```go
 if actual = Foo(input); actual != expected { ...
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD call testing.T.Parallel
+
+#### Examples
 
 ```go
 func TestFoo(t *testing.T) {
     t.Parallel() ...
 ```
 
+#### Reasons
+
+- 
+
 ### SHOULD use the -race flag
+
+#### Examples
 
 ```
 $ go test -race
 ```
+
+#### Reasons
+
+- 
