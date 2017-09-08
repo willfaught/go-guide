@@ -22,6 +22,7 @@ The sections and conventions are ordered alphabetically.
 
 ## General
 
+- MUST comply with go build ./...
 - MUST comply with go test
 - MUST comply with go vet
 - MUST comply with gofmt -s
