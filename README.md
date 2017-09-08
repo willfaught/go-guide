@@ -94,9 +94,9 @@ make(map[T]T, n)
 new(int)
 ```
 
-#### Reasons
+#### Reason
 
-- 
+Consistent style.
 
 ### SHOULD begin comments with a space and end general comments with a space
 
@@ -110,33 +110,33 @@ new(int)
 /* Started earlier */
 ```
 
-#### Reasons
+#### Reason
 
-- 
+Consistent style.
 
 ### SHOULD capitalize comments
 
-#### Examples
+#### Example
 
 ```go
 // Started earlier
 ```
 
-#### Reasons
+#### Reason
 
-- 
+- Consistent style.
 
 ### SHOULD end comments with multiple sentences with punctuation
 
-#### Examples
+#### Example
 
 ```go
 // Started earlier. Skip initialization.
 ```
 
-#### Reasons
+#### Reason
 
-- 
+Consistent style.
 
 ### SHOULD group similar kinds of statements and declarations with blank lines
 
@@ -177,11 +177,13 @@ return
 
 #### Reasons
 
-- 
+- Consistent style
+- Skimmable
+- Grouping similar things and separating different things helps understanding
 
 ### SHOULD order file declarations like `go doc -u`
 
-#### Examples
+#### Example
 
 ```go
 const C ...
@@ -219,7 +221,8 @@ func (t) m { ...
 
 #### Reasons
 
-- 
+- Find things faster with binary search
+- Find things faster with a predictable organization
 
 ### SHOULD separate cases with blank lines
 
@@ -253,11 +256,12 @@ default:
 
 #### Reasons
 
-- 
+- Consistent style
+- Skimmable
 
 ### SHOULD separate multiple-line blocks with blank lines
 
-#### Examples
+#### Example
 
 ```go
 const ...
@@ -293,7 +297,8 @@ func ... {
 
 #### Reasons
 
-- 
+- Consistent style
+- Skimmable
 
 ### SHOULD use long variable declarations instead of short where equivalent
 
@@ -307,11 +312,32 @@ b, err := ...
 
 #### Reasons
 
-- 
+- Consistent style
+- Consistent with other kinds of declarations
+
+        ```go
+        const c = ...
+        var v = ...
+        type t = ...
+        ```
+
+- Short declarations with multiple variables are context-sensitive: `a, b := f()` can mean declare two new variables, declare a and assign b, or declare b and assign a; and thus cannot always be copied to another place safely
+- Avoids unintentional variable shadowing
+
+```go
+x := ...
+
+if ... {
+    x, err := ...
+
+f(x) // X is always unchanged
+```
+
+- A short declaration indicates that something clever is happening
 
 ## Testing
 
-### SHOULD NOT use assertion libraries
+### SHOULD NOT use test frameworks or assertion libraries
 
 #### Examples
 
@@ -321,7 +347,9 @@ if actual = Foo(input); actual != expected { ...
 
 #### Reasons
 
-- 
+- You don't have to learn test DSLs
+- Code is easy to understand
+- Third-party code can break or be abandoned
 
 ### SHOULD call testing.T.Parallel
 
@@ -334,16 +362,17 @@ func TestFoo(t *testing.T) {
 
 #### Reasons
 
-- 
+- Tests run in parallel finish faster
+- Parallelism discourages side effects and singletons
 
 ### SHOULD use the -race flag
 
-#### Examples
+#### Example
 
 ```
 $ go test -race
 ```
 
-#### Reasons
+#### Reason
 
-- 
+Catch data races early.
