@@ -44,9 +44,15 @@ The sections and conventions are ordered alphabetically.
 
 ## Style
 
-- MUST NOT begin or end blocks with a blank line
+- SHOULD NOT begin or end blocks and groups with a blank line
 
-        if ... {
+        var (
+            foo Foo
+
+            bar Bar
+        )
+
+        {
             foo()
 
             bar()
