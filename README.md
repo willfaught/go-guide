@@ -8,13 +8,13 @@ The sections and conventions are ordered alphabetically.
 
 ## Design
 
-- SHOULD NOT export global variables from libraries
+### SHOULD NOT export global variables from libraries
 
         func New() *Foo { ...
 
 ## Documentation
 
-- SHOULD name benchmarks and tests like examples
+### SHOULD name benchmarks and tests like examples
 
         func BenchmarkFoo_Bar_baz() ...
 
@@ -22,29 +22,29 @@ The sections and conventions are ordered alphabetically.
 
 ## General
 
-- MUST comply with go build ./...
-- MUST comply with go test ./...
-- MUST comply with go vet ./...
-- MUST comply with gofmt -s
-- MUST comply with goimports
-- MUST comply with golint
-- SHOULD comply with https://golang.org/doc/effective_go.html
-- SHOULD comply with the Go blog
-- SHOULD comply with the Go wiki
-- SHOULD follow the example of the Go standard libraries
-- SHOULD follow the example of the Go project
+### MUST comply with go build ./...
+### MUST comply with go test ./...
+### MUST comply with go vet ./...
+### MUST comply with gofmt -s
+### MUST comply with goimports
+### MUST comply with golint
+### SHOULD comply with https://golang.org/doc/effective_go.html
+### SHOULD comply with the Go blog
+### SHOULD comply with the Go wiki
+### SHOULD follow the example of the Go standard libraries
+### SHOULD follow the example of the Go project
 
 ## Implementation
 
-- MUST commit vendored packages
+### MUST commit vendored packages
 
-- MUST vendor external packages for main packages
+### MUST vendor external packages for main packages
 
-- MUST vendor with dep
+### MUST vendor with dep
 
 ## Style
 
-- SHOULD NOT begin or end blocks with a blank line
+### SHOULD NOT begin or end blocks with a blank line
 
         var (
             foo Foo
@@ -58,28 +58,28 @@ The sections and conventions are ordered alphabetically.
             bar()
         }
 
-- SHOULD NOT use the built-in functions `make` or `new` unless necessary
+### SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
         make(chan Foo)
         make(chan Foo, bar)
         make(map[Foo]Bar, baz)
         new(int)
 
-- SHOULD begin comments with a space and end general comments with a space
+### SHOULD begin comments with a space and end general comments with a space
 
         // Started earlier
 
         /* Started earlier */
 
-- SHOULD capitalize comments
+### SHOULD capitalize comments
 
         // Started earlier
 
-- SHOULD end comments with multiple sentences with punctuation
+### SHOULD end comments with multiple sentences with punctuation
 
         // Started earlier. Skip initialization.
 
-- SHOULD group similar kinds of statements and declarations with blank lines
+### SHOULD group similar kinds of statements and declarations with blank lines
 
         const ...
         const ...
@@ -112,7 +112,7 @@ The sections and conventions are ordered alphabetically.
         goto
         return
 
-- SHOULD order file declarations like `go doc -u`
+### SHOULD order file declarations like `go doc -u`
 
         const C ...
         
@@ -146,7 +146,7 @@ The sections and conventions are ordered alphabetically.
 
         func (t) m ...
 
-- SHOULD separate cases with blank lines
+### SHOULD separate cases with blank lines
 
         select ... {
         case ...:
@@ -170,7 +170,7 @@ The sections and conventions are ordered alphabetically.
             ...
         }
 
-- SHOULD separate multiple-line blocks with blank lines
+### SHOULD separate multiple-line blocks with blank lines
 
         const ...
         const ...
@@ -202,7 +202,7 @@ The sections and conventions are ordered alphabetically.
             ...
         }
 
-- SHOULD use long variable declarations instead of short where equivalent
+### SHOULD use long variable declarations instead of short where equivalent
 
         var a, err = ...
 
@@ -210,15 +210,15 @@ The sections and conventions are ordered alphabetically.
 
 ## Testing
 
-- SHOULD NOT use assertion libraries
+### SHOULD NOT use assertion libraries
 
         if actual = Foo(input); actual != expected { ...
 
-- SHOULD call testing.T.Parallel
+### SHOULD call testing.T.Parallel
 
         func TestFoo(t *testing.T) {
             t.Parallel() ...
 
-- SHOULD use the -race flag
+### SHOULD use the -race flag
 
         $ go test -race
