@@ -60,14 +60,9 @@ The sections and conventions are ordered alphabetically.
 
 - SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
-        &Foo{}
-        []Foo{}
-        make([]Foo, bar)
-        make([]Foo, bar, baz)
         make(chan Foo)
         make(chan Foo, bar)
         make(map[Foo]Bar, baz)
-        map[Foo]Bar{...}
         new(int)
 
 - SHOULD abbreviate names with initials or prefixes
