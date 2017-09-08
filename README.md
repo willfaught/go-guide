@@ -22,9 +22,9 @@ func TestT_M_foo() { ...
 
 #### Reasons
 
-- You can run all benchmarks and tests for a package P with `go test -run ^P`
-- You can run all benchmarks and tests for a declaration D with `go test -run ^D`
-- You can run all benchmarks and tests for a method T.M with `go test -run ^T_M`
+- You can run all tests for a package P with `go test -run ^TestP`
+- You can run all tests for a declaration D with `go test -run ^TestD`
+- You can run all tests for a method T.M with `go test -run ^TestT_M`
 
 ## General
 
