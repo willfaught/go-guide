@@ -173,6 +173,11 @@ The sections and conventions are ordered alphabetically.
 - SHOULD separate multiple-line blocks with blank lines
 
         const ...
+        const ...
+
+        const (
+            ...
+        )
 
         const (
             ...
@@ -182,13 +187,16 @@ The sections and conventions are ordered alphabetically.
             ...
         }
 
-        var ...
-
-        var (
+        if ... {
             ...
-        )
+        }
 
         func ... { ... }
+        func ... { ... }
+
+        func ... {
+            ...
+        }
 
         func ... {
             ...
