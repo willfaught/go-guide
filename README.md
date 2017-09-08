@@ -170,7 +170,7 @@ The sections and conventions are ordered alphabetically.
             ...
         }
 
-- SHOULD separate multiple-line curly and round bracket blocks from other statements with a blank line
+- SHOULD separate multiple-line curly and round bracket blocks with a blank line
 
         const ...
 
