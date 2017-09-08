@@ -35,6 +35,8 @@ The sections and conventions are ordered alphabetically.
 
 ## Implementation
 
+- MUST build with go build ./...
+
 - MUST commit vendored packages
 
 - MUST vendor external packages for main packages
