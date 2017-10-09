@@ -138,7 +138,7 @@ Consistent style.
 
 Consistent style.
 
-### SHOULD group similar kinds of statements and declarations with blank lines
+### SHOULD separate different kinds of statements and declarations with blank lines
 
 #### Examples
 
