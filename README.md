@@ -6,26 +6,6 @@ The examples show what MUST, SHOULD, or MAY be done.
 
 The sections and conventions are ordered alphabetically.
 
-## Documentation
-
-### SHOULD name benchmarks and tests like examples
-
-#### Examples
-
-```go
-func BenchmarkT_M_foo() { ...
-```
-
-```go
-func TestT_M_foo() { ...
-```
-
-#### Reasons
-
-- You can run all tests for a package P with `go test -run ^TestP`
-- You can run all tests for a declaration D with `go test -run ^TestD`
-- You can run all tests for a method T.M with `go test -run ^TestT_M`
-
 ## General
 
 ### MUST comply with go build ./...
