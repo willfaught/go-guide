@@ -332,20 +332,6 @@ if actual = Foo(input); actual != expected { ...
 - Not provided in the testing standard library
 - Not used in the standard library tests
 
-### SHOULD call testing.T.Parallel
-
-#### Examples
-
-```go
-func TestFoo(t *testing.T) {
-    t.Parallel() ...
-```
-
-#### Reasons
-
-- Tests run in parallel finish faster
-- Parallelism discourages side effects and singletons
-
 ### SHOULD use the -race flag
 
 #### Example
