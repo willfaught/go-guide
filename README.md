@@ -312,7 +312,7 @@ bar, err := ...
     f(x) // X is always unchanged
     ```
 
-- If done this way, then short declarations in blocks indicate that something clever is happening
+- Short declarations in blocks indicate that something clever is happening
 
 ## Testing
 
