@@ -50,9 +50,9 @@ var (
 }
 ```
 
-#### Reason
+#### Reasons
 
-Consistent style.
+- Consistent style
 
 ### SHOULD NOT use the built-in functions `make` or `new` unless necessary
 
@@ -74,9 +74,9 @@ make(map[T]T, n)
 new(int)
 ```
 
-#### Reason
+#### Reasons
 
-Consistent style.
+- Consistent style
 
 ### SHOULD begin comments with a space and end general comments with a space
 
@@ -90,9 +90,9 @@ Consistent style.
 /* Started earlier */
 ```
 
-#### Reason
+#### Reasons
 
-Consistent style.
+- Consistent style
 
 ### SHOULD capitalize comments
 
@@ -102,9 +102,9 @@ Consistent style.
 // Started earlier
 ```
 
-#### Reason
+#### Reasons
 
-- Consistent style.
+- Consistent style
 
 ### SHOULD end comments with multiple sentences with punctuation
 
@@ -114,9 +114,9 @@ Consistent style.
 // Started earlier. Skip initialization.
 ```
 
-#### Reason
+#### Reasons
 
-Consistent style.
+- Consistent style
 
 ### SHOULD separate different kinds of statements and declarations with blank lines
 
