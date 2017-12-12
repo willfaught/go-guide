@@ -298,6 +298,15 @@ bar, err := ...
     type t = ...
     ```
 
+- Consistent with package variable declarations
+
+    ```go
+    var p = ...
+    
+    func ... {
+        var l = ...
+    ```
+
 - Short declarations with multiple variables in blocks are context-sensitive; for *n* variables, there are 2<sup>*n*-1</sup> + 1 possible meanings. This can lead to copy-paste errors.
 - Avoids unintentional variable shadowing
 
