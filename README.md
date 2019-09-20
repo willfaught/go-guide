@@ -4,6 +4,11 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The sections and conventions are ordered alphabetically.
 
+## Errors
+
+### SHOULD NOT use ending punctuation in one-line errors
+### SHOULD NOT use sentence case in errors
+
 ## General
 
 These conventions closely follow Go idioms, Go best practicies, and the Go Way. They are the consensus of the Go community on how best to write Go. Most who write Go already do these things. Aside from the obvious benefits, it is important to write Go like the Go community so new engineers can more easily understand it.
@@ -19,6 +24,11 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 ### SHOULD comply with https://golang.org/wiki/CodeReviewComments
 ### SHOULD follow the example of the Go standard libraries
 ### SHOULD follow the example of the Go project
+
+## Logs
+
+### SHOULD NOT use ending punctuation in one-line logs
+### SHOULD NOT use sentence case in logs
 
 ## Style
 
