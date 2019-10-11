@@ -19,6 +19,11 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 ### MUST comply with gofmt -s
 ### MUST comply with goimports
 ### MUST comply with golint
+### MUST support go doc
+### MUST support go generate
+### MUST support go get
+### MUST support go install
+### MUST support go mod
 ### SHOULD comply with https://golang.org/blog
 ### SHOULD comply with https://golang.org/doc/effective_go.html
 ### SHOULD comply with https://golang.org/wiki/CodeReviewComments
