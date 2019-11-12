@@ -23,8 +23,8 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 ### SHOULD comply with https://golang.org/doc/effective_go.html
 ### SHOULD comply with https://golang.org/doc/faq
 ### SHOULD comply with https://golang.org/wiki/CodeReviewComments
-### SHOULD follow the example of the Go standard libraries
 ### SHOULD follow the example of the Go project
+### SHOULD follow the example of the Go standard libraries
 
 ## Style
 
