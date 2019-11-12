@@ -28,7 +28,7 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 
 ## Style
 
-### SHOULD begin one-line comments with a space and end one-line general comments with a space
+### SHOULD begin one-line comments and end one-line general comments with a space
 
 #### Examples
 
