@@ -38,48 +38,6 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 
 ## Style
 
-### SHOULD NOT begin or end blocks with a blank line
-
-Blocks are matched pairs of parentheses or braces that are not on the same line.
-
-#### Examples
-
-Good:
-
-```go
-var (
-    foo T
-
-    bar T
-)
-
-func() {
-    foo()
-
-    bar()
-}
-```
-
-Bad:
-
-```go
-var (
-
-    foo T
-
-    bar T
-
-)
-
-func() {
-
-    foo()
-
-    bar()
-
-}
-```
-
 ### SHOULD NOT use Markdown-like syntax in comments except for lists and indentation
 
 #### Examples
