@@ -6,8 +6,8 @@ The sections and conventions are ordered alphabetically.
 
 ## Errors
 
-### SHOULD NOT use ending punctuation in one-line errors
-### SHOULD NOT use sentence case in errors
+### SHOULD NOT use ending punctuation in error strings
+### SHOULD NOT use sentence case in error strings
 
 ## General
 
@@ -30,11 +30,6 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 ### SHOULD comply with https://golang.org/wiki/CodeReviewComments
 ### SHOULD follow the example of the Go standard libraries
 ### SHOULD follow the example of the Go project
-
-## Logs
-
-### SHOULD NOT use ending punctuation in one-line logs
-### SHOULD NOT use sentence case in logs
 
 ## Style
 
