@@ -52,22 +52,6 @@ Bad:
 /*Started earlier*/
 ```
 
-### SHOULD capitalize comments
-
-#### Examples
-
-Good:
-
-```go
-// Started earlier
-```
-
-Bad:
-
-```go
-// started earlier
-```
-
 ### SHOULD end comments with multiple sentences with punctuation
 
 #### Examples
@@ -82,6 +66,24 @@ Bad:
 
 ```go
 // Started earlier. Skip initialization
+```
+
+### SHOULD use sentence case for whole-line comments
+
+#### Examples
+
+Good:
+
+```go
+// Started earlier
+if stopped() {
+```
+
+Bad:
+
+```go
+// started earlier
+if stopped() {
 ```
 
 ## Testing
