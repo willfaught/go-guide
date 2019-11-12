@@ -120,18 +120,4 @@ Bad:
 
 ## Testing
 
-### SHOULD NOT use test frameworks or assertion libraries
-
-#### Examples
-
-```go
-if actual = Foo(input); actual != expected { ...
-```
-
-#### Reasons
-
-- You don't have to learn test DSLs
-- Code is easy to understand
-- Third-party code can break or be abandoned
-- Not provided in the testing standard library
-- Not used in the standard library tests
+### SHOULD NOT use other test frameworks
