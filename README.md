@@ -28,30 +28,6 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 
 ## Style
 
-### SHOULD NOT use Markdown-like syntax in comments except for lists and indentation
-
-#### Examples
-
-Good:
-
-```go
-// Formatted as <foo>-<bar>-<baz>, where...
-```
-
-```go
-// Formatted as
-//
-//     <foo>-<bar>-<baz>
-//
-// where...
-```
-
-Bad:
-
-```go
-// Formatted as `<foo>-<bar>-<baz>`, where...
-```
-
 ### SHOULD begin one-line comments with a space and end one-line general comments with a space
 
 #### Examples
