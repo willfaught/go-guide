@@ -89,3 +89,61 @@ if stopped() {
 ## Testing
 
 ### SHOULD NOT use other test frameworks
+
+Some reasons to use the built-in Go test framework:
+
+- It's simpler
+- It's fully capable
+- It's widely understood [by hundreds of thousands or millions of Go developers](https://research.swtch.com/gophercount)
+- It's built-in
+- It's supported by the Go team, stable, idiomatic, and high-quality
+- [It's not a DSL](https://golang.org/doc/faq#testing_framework)
+
+Some reasons not to use `testify/suite`:
+
+- It encourages shared state among test methods, which is difficult to reason about, extend, and parallelize. Most tests should be independent and able to run in parallel. The motivation for using suites goes away as soon as you isolate every test.
+- You have to have a driver test in the Go test framework just to get it to work:
+
+```go
+func TestFooTestSuite(t *testing.T) {
+	suite.Run(t, new(FooTestSuite))
+}
+```
+
+- You have to write boilerplate just to do simple testing:
+
+```go
+type FooTestSuite struct {
+	suite.Suite
+}
+
+func (suite *FooTestSuite) TestFoo() {
+        ...
+}
+
+func TestFooTestSuite(t *testing.T) {
+	suite.Run(t, new(FooTestSuite))
+}
+```
+
+Compare that to:
+
+```go
+func TestFoo(t *testing.T) {
+	...
+}
+```
+
+- It's a third-party, external dependency that we have to learn and maintain
+
+If you look at `suite.Suite`, it doesn't actually do all that much:
+
+```
+func (suite *Suite) Assert() *assert.Assertions
+func (suite *Suite) Require() *require.Assertions
+func (suite *Suite) Run(name string, subtest func()) bool
+func (suite *Suite) SetT(t *testing.T)
+func (suite *Suite) T() *testing.T
+```
+
+It just packages together shared `assert.Assertions`, `require.Assertions`, and `testing.T` values, and provides a helper method for calling `testing.T.Run`. `suite.Run` provides support for setup/teardown hooks. That's it. But Go test framework tests already have a `testing.T`, they can already use `assert.Assertions` and `require.Assertions`, and as illustrated in the `testing` package doc ([1](https://golang.org/pkg/testing/#hdr-Subtests_and_Sub_benchmarks), [2](https://golang.org/pkg/testing/#hdr-Main)), it's trivial enough to do setup/teardown with normal Go code and `testing.T.Run`.
