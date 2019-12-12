@@ -118,7 +118,7 @@ type FooTestSuite struct {
 }
 
 func (suite *FooTestSuite) TestFoo() {
-        ...
+	...
 }
 
 func TestFooTestSuite(t *testing.T) {
