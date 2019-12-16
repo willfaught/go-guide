@@ -88,13 +88,15 @@ if stopped() {
 
 ## Testing
 
-### SHOULD NOT use other test frameworks
+### SHOULD NOT use test suites
 
-Some reasons to use the built-in Go test framework:
+Some are tempted to use test suites on top of the standard Go test framework, like `testify/suite`.
+
+Some reasons to use plain Go tests:
 
 - It's simpler
 - It's fully capable
-- It's widely understood [by hundreds of thousands or millions of Go developers](https://research.swtch.com/gophercount)
+- It's widely understood
 - It's built-in
 - It's supported by the Go team, stable, idiomatic, and high-quality
 - [It's not a DSL](https://golang.org/doc/faq#testing_framework)
