@@ -89,9 +89,9 @@ skip()
 
 ## Testing
 
-### SHOULD NOT use test suites
+### SHOULD NOT use test frameworks
 
-Some are tempted to use test suites on top of the standard Go test framework, like `testify/suite`.
+Some are tempted to use test frameworks on top of Go tests, like `testify/suite`.
 
 Some reasons to use plain Go tests:
 
@@ -104,7 +104,7 @@ Some reasons to use plain Go tests:
 
 Some reasons not to use `testify/suite`:
 
-- It encourages shared state among test methods, which is difficult to reason about, extend, and parallelize. Most tests should be independent and able to run in parallel. The motivation for using suites goes away as soon as you isolate every test.
+- It encourages shared state among test methods, which is difficult to reason about, extend, and parallelize. Most tests should be independent and able to run in parallel. The motivation to use test frameworks goes away as soon as you isolate every test.
 - You have to have a driver test in the Go test framework just to get it to work:
 
 ```go
@@ -137,7 +137,7 @@ func TestFoo(t *testing.T) {
 }
 ```
 
-- It's a third-party, external dependency that we have to learn and maintain
+- It's a third-party, external dependency that you have to learn and maintain.
 
 If you look at `suite.Suite`, it doesn't actually do all that much:
 
@@ -149,4 +149,4 @@ func (suite *Suite) SetT(t *testing.T)
 func (suite *Suite) T() *testing.T
 ```
 
-It just packages together shared `assert.Assertions`, `require.Assertions`, and `testing.T` values, and provides a helper method for calling `testing.T.Run`. `suite.Run` provides support for setup/teardown hooks. That's it. Go tests already have a `testing.T`, they can already use `assert.Assertions` and `require.Assertions`, and—as illustrated in the `testing` package doc<sup>[1](https://golang.org/pkg/testing/#hdr-Subtests_and_Sub_benchmarks), [2](https://golang.org/pkg/testing/#hdr-Main)</sup>—it's trivial enough to do setup/teardown with normal Go code and subtests.
+It just packages together shared `assert.Assertions`, `require.Assertions`, and `testing.T` values, and provides a helper method for calling `testing.T.Run`. `suite.Run` provides support for setup and teardown hooks. That's it. Tests already have a `testing.T`, they can already use `assert.Assertions` and `require.Assertions`, and—as illustrated in the `testing` package doc<sup>[1](https://golang.org/pkg/testing/#hdr-Subtests_and_Sub_benchmarks), [2](https://golang.org/pkg/testing/#hdr-Main)</sup>—it's trivial enough to do setup and teardown with normal code and subtests.
