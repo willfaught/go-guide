@@ -77,14 +77,14 @@ Good:
 
 ```go
 // Started earlier
-if stopped() {
+skip()
 ```
 
 Bad:
 
 ```go
 // started earlier
-if stopped() {
+skip()
 ```
 
 ## Testing
