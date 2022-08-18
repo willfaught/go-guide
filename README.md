@@ -21,7 +21,8 @@ These conventions closely follow Go idioms, Go best practicies, and the Go Way. 
 ### MUST support go mod
 ### SHOULD comply with https://go.dev/blog
 ### SHOULD comply with https://go.dev/doc/effective_go.html
-### SHOULD comply with https://golang.org/wiki/CodeReviewComments
+### SHOULD comply with https://go.dev/wiki/CodeReviewComments
+### SHOULD comply with https://go.dev/wiki/TestComments
 ### SHOULD follow the example of the Go project
 ### SHOULD follow the example of the Go standard libraries
 
