@@ -11,7 +11,7 @@ The sections and rules are ordered alphabetically.
 ### MUST comply with go vet ./...
 ### MUST comply with gofmt -s
 ### MUST comply with goimports
-### MUST comply with golint
+### MUST comply with staticcheck
 ### MUST support go doc
 ### MUST support go generate
 ### MUST support go get
