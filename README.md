@@ -23,6 +23,7 @@ The sections and rules are ordered alphabetically.
 ### SHOULD comply with https://go.dev/doc/faq
 ### SHOULD comply with https://go.dev/wiki
 ### SHOULD comply with https://go.dev/wiki/CodeReviewComments
+### SHOULD comply with https://go.dev/wiki/CodeReviewConcurrency
 ### SHOULD comply with https://go.dev/wiki/Comments
 ### SHOULD comply with https://go.dev/wiki/Errors
 ### SHOULD comply with https://go.dev/wiki/TableDrivenTests
