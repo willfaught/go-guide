@@ -20,10 +20,12 @@ The sections and rules are ordered alphabetically.
 ### SHOULD comply with https://go.dev/blog
 ### SHOULD comply with https://go.dev/doc
 ### SHOULD comply with https://go.dev/doc/effective_go.html
+### SHOULD comply with https://go.dev/doc/faq
 ### SHOULD comply with https://go.dev/wiki
 ### SHOULD comply with https://go.dev/wiki/CodeReviewComments
 ### SHOULD comply with https://go.dev/wiki/Comments
 ### SHOULD comply with https://go.dev/wiki/Errors
+### SHOULD comply with https://go.dev/wiki/TableDrivenTests
 ### SHOULD comply with https://go.dev/wiki/TestComments
 ### SHOULD follow the example of the Go project
 ### SHOULD follow the example of the Go standard libraries
