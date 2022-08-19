@@ -18,6 +18,7 @@ The sections and rules are ordered alphabetically.
 ### MUST support go install
 ### MUST support go mod
 ### SHOULD comply with https://go.dev/blog
+### SHOULD comply with https://go.dev/doc
 ### SHOULD comply with https://go.dev/doc/effective_go.html
 ### SHOULD comply with https://go.dev/wiki/CodeReviewComments
 ### SHOULD comply with https://go.dev/wiki/Comments
